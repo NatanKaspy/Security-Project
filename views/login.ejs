@@ -1,0 +1,22 @@
+<%- include('partials/header')-%>
+
+<div class="form">
+  <h2 style="text-align: center;">Login</h2> 
+  <form action="/user/login" method="post">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input name="username" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input name="password" type="password" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+  <a href='/user/forgotPassword'">Having trouble to login?</a>
+  <hr>
+  <a href='/user/register' class="btn btn-light">Register</a>
+</div>
+
+<%- include('partials/footer')-%>

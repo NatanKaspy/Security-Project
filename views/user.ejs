@@ -1,0 +1,9 @@
+<%- include('partials/header')-%>
+
+<div>
+  <h3>Hello <%- locals.user.email -%> </h3> 
+  <a  class="btn btn-light" href="/user/changePassword">Change Password</a>
+  <a  class="btn btn-light" href="/user/logout">Logout</a>
+</div>
+
+<%- include('partials/footer')-%>
